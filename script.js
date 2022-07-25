@@ -25,13 +25,9 @@ let isAlive = setInterval ( function(){
 
 let score = document.getElementById("score");
 
-
-
- 
 let hiScore = setInterval (function(hiScore){
-     score.innerHTML = +(score.innerHTML + 1);
+     score.innerHTML = +(score.innerHTML) + 1;
      return score.innerHTML;
-     }, 1000)
-
+     }, 1000);
 
 console.log (score.innerHTML);
